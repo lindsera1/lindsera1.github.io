@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Library</title>
+<script>
+    function Library(){
+
+        this.books = []
+
+        this.titles = function(){
+            for(let book of books){
+                console.log(book[0])
+            }
+        }
+        this.authors = function(){
+            for(let book of books){
+                alert(book[1])
+            }
+        },
+
+        this.libIds = function(){
+            for(let book of books){
+                alert(book[2])
+            }
+        },
+
+        this.volumes = function(){
+            for(let book of books){
+                alert(book);
+            }
+        },
+        
+        this.Book = function(){
+           title = document.getElementById('title').value;
+           author = document.getElementById('author').value;
+           libId = document.getElementById('libId').value;
+
+           book = [title,author,libId];
+           
+           document.getElementById("book").innerHTML = this.book.join("\n");
+
+           this.books.push(book);
+        }
+        let library = new Library();
+</script>
+
+</head>
+
+<body>
+    <h1>Enter info below</h1>
+    Author: 
+    <input id="author" type="text"/><br/>
+    Title: 
+    <input id="title" type="text"/><br/>
+    LibId:
+    <input id="libId" type="text"/>
+    <button onclick="library.Book()">Add book</button> 
+    <button onclick="library.titles()">Show titles</button>
+    <button onclick="let created_book = Book()">Show authors</button>
+    <button onclick="let created_book = Book()">Show IDs</button>
+    <span id="book">Your new book</span>
+
+</body>
+
+</html>
