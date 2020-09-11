@@ -5,45 +5,46 @@
     <meta charset="utf-8" />
     <title>Library</title>
 <script>
-    function Library(){
+    
 
-        this.books = []
+        let books = [];
 
-        this.titles = function(){
+        let titles = function(){
             for(let book of books){
-                console.log(book[0])
+                alert(book[0])
             }
         }
-        this.authors = function(){
+
+        let authors = function(){
             for(let book of books){
                 alert(book[1])
             }
-        },
+        }
 
-        this.libIds = function(){
+        let libIds = function(){
             for(let book of books){
                 alert(book[2])
             }
-        },
+        }
 
-        this.volumes = function(){
+        let volumes = function(){
             for(let book of books){
                 alert(book);
             }
-        },
+        }
         
-        this.Book = function(){
+        let Book = function(){
            title = document.getElementById('title').value;
            author = document.getElementById('author').value;
            libId = document.getElementById('libId').value;
 
-           book = [title,author,libId];
+           let book = [title,author,libId];
            
-           document.getElementById("book").innerHTML = this.book.join("\n");
+           document.getElementById("book").innerHTML = book.join("\n");
 
-           this.books.push(book);
+           books.push(book);
         }
-        let library = new Library();
+        
 </script>
 
 </head>
@@ -55,11 +56,12 @@
     Title: 
     <input id="title" type="text"/><br/>
     LibId:
-    <input id="libId" type="text"/>
-    <button onclick="library.Book()">Add book</button> 
-    <button onclick="library.titles()">Show titles</button>
-    <button onclick="let created_book = Book()">Show authors</button>
-    <button onclick="let created_book = Book()">Show IDs</button>
+    <input id="libId" type="text"/><br/>
+
+    <button onclick="Book()">Add book</button> 
+    <button onclick="titles()">Show titles</button>
+    <button onclick="authors()">Show authors</button>
+    <button onclick="libIds()">Show IDs</button>
     <span id="book">Your new book</span>
 
 </body>
