@@ -13,12 +13,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
     <script>
         // chai has a lot of stuff, let's make assert global
-        let assert = chai.assert;
+        let expect = chai.expect;
     </script>
-    <script src="w1d4.js"></script>
+    <script>
+    function randomInteger(min,max){
+        let rand = min + Math.random()*(max + 1 - min);
+        return Math.floor(rand);
+    }
+    </script>
 
     <!-- the script with tests (describe, it...) -->
-    <script src="w1d4Tests.js"></script>
+    <script src="w1d4Test.js"></script>
     
      
 </head>
@@ -26,7 +31,16 @@
 <body>
 
     <h1>See sources</h1>
+</script>
+<script>
+function randomInteger(min,max){
+    let rand = min + Math.random()*(max + 1 - min);
+    return Math.floor(rand);
+}
+</script>
 
+<!-- the script with tests (describe, it...) -->
+<script src="w1d4Test.js"></script>
 
 
     <!-- the element with id="mocha" will contain test results -->
