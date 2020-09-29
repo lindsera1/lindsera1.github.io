@@ -86,11 +86,11 @@ function getSecondsToday() {
 
   //Turn the object into JSON and back.
 
-  let user = {
+  let user1 = {
     name: "John Smith",
     age: 35
   };
   
-  let user2 = JSON.parse(JSON.stringify(user));
+  let user2 = JSON.parse(JSON.stringify(user1));
 
   
