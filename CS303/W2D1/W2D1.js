@@ -84,38 +84,38 @@ console.log(filterRange([1,2,3,4,5,6,7,8],2,5));
 
 //Filter Range in Place
 
-function filterRangeInPlace(arr,a,b){
+function filterRangeInPlace(arr1,a,b){
     
-    for(let i = 0; i<arr.length; i++) {
-        let value = arr[i];
+    for(let i = 0; i<arr1.length; i++) {
+        let value = arr1[i];
 
         if(a > value || value > b){
-            arr.splice(i,1);
+            arr1.splice(i,1);
             i--;
         }
     }
-    return arr;
+    return arr1;
 }
 
 console.log(filterRangeInPlace([1,2,3,4,5,6,7,8],3,6));
 
 //Sort in decreasing order
 
-let arr = [5,2,1,-10,8];
+let arr2 = [5,2,1,-10,8];
 
-arr.sort((a, b) => b - a);
+arr2.sort((a, b) => b - a);
 
-console.log(arr);
+console.log(arr2);
 
 //Copy and sort array
 
-let arr = ["HTML", "JavaScript", "CSS"];
+let arr3 = ["HTML", "JavaScript", "CSS"];
 
-function copySorted(arr) {
-    return arr.slice().sort();
+function copySorted(arr3) {
+    return arr3.slice().sort();
 }
 
-let sorted = copySorted(arr);
+let sorted = copySorted(arr3);
 
 console.log(sorted);
 
