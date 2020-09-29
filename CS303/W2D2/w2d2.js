@@ -52,24 +52,24 @@ function getWeekDay(date) {
 
 //European Weekday
 
-function getLocalDay(date) {
+function getLocalDay(date1) {
 
-    let day = date.getDay();
+    let day1 = date1.getDay();
   
-    if (day == 0) { // weekday 0 (sunday) is 7 in european
-      day = 7;
+    if (day1 == 0) { // weekday 0 (sunday) is 7 in european
+      day1 = 7;
     }
   
-    return day;
+    return day1;
 }
 
 //Which day of the month was many days ago?
 
-let date = new Date(2015, 0, 2);
+let date2 = new Date(2015, 0, 2);
 
-console.log(getDateAgo(date, 1)); 
-console.log(getDateAgo(date, 2)); 
-console.log(getDateAgo(date, 365));
+console.log(getDateAgo(date2, 1)); 
+console.log(getDateAgo(date2, 2)); 
+console.log(getDateAgo(date2, 365));
 
 //Seconds that have passed today
 
