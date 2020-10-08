@@ -29,7 +29,7 @@ function askPassword(ok, fail) {
     else fail();
   }
   
-  let user = {
+  let user1 = {
     name: 'John',
   
     login(result) {
@@ -37,4 +37,4 @@ function askPassword(ok, fail) {
     }
   };
   
-  askPassword(user.login.bind(user,true), user.login.bind(user, false)); // ?
+  askPassword(user1.login.bind(user1,true), user1.login.bind(user1, false)); // ?
