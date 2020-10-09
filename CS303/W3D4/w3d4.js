@@ -19,8 +19,8 @@ function askPassword(ok, fail) {
   
   askPassword(user.loginOk.bind(user), user.loginFail.bind(user));
   askPassword(function(){return user.loginOK()},function(){user.loginFail()})
-  askPassword()
-  askPassword()
+  askPassword(function(){user.login.call(user)},function(){user.login.call(user)});
+  askPassword(function(){user.login.apply(user)},function(){user.login.apply(user)});
   //Partial application for login
 
   function askPassword(ok, fail) {
