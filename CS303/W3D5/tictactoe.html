@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang = "us en">
-    <head>
-        <meta charset="utf-8" />
-        <title>Tic Tac Toe</title>
-        <script src = "tictactoe.js"></script>
-        
+    <head></head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="tictactoe.css">
     </head>
     <body>
-        <h1>Tic Tac Toe</h1>
-            <div class="game">
-                <div class="game-title" contenteditable="true">Tic Tac Toe</div>
-                <div class="player" contenteditable="true">
-                    Player 1
-                    <div style="font-size:30pt;" id="player1" class="selected" contenteditable="true">
-                    0
-                    </div>
-                </div>
-                        
-                <table onload = "drawBoard()" id="game" class="tictactoe" style="float:left;width:45%;" contenteditable="true">
-                </table>
-                        
-                <div class="player" contenteditable="true">
-                    Player 2
-                    <div id="player2" style="font-size:30pt;" contenteditable="true">0</div>
-                </div>
-                        
-                <div class="clear" contenteditable="true"></div>
+        <div class="game">
+            <div class="game-title" contenteditable="true">Tic Tac Toe</div>
+            <div class="player" contenteditable="true">
+            Player 1
+            <div style="font-size:30pt;" id="player1" class="selected" contenteditable="true">
+            0
+            </div>
             </div>
             
-
+            <table id="game" class="tictactoe" style="float:left;width:45%;" contenteditable="true">
+            </table>
+            
+            <div class="player" contenteditable="true">
+            Player 2
+            <div id="player2" style="font-size:30pt;" contenteditable="true">0</div>
+            </div>
+            
+            <div class="clear" contenteditable="true"></div>
+            </div>
+        <script src="tictactoe.js" async defer></script>
     </body>
 </html>
