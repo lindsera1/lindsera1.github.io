@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./style.css" rel="stylesheet"/>
+    <script src="./library.js"></script>
+    <script src="./actions.js"></script>
+</head>
+<body>
+    <div id="main">
+        <h1>Welcome to the Library</h1>
+        <label>Please enter your name:</label> 
+        <input type="text" id="student_name"/>
+        <button onclick="pullInfo()">Pull Info</button><span id="info">Enter your name and click Pull Info button</span><br/>
+        <button onclick="add(event)" value="Godel, Escher, Bach: an Eternal Golden Braid"><img src="./images/geb.jpeg" width="200" height="200"/></button>
+        <button onclick="add(event)" value="Harry Potter and the Deathly Hallows"><img src="./images/hp7.jpeg" width="200" height="200"/></button>
+        <button onclick="add(event)" value="Inheritance"><img src="./images/inheritance.jpeg" width="200" height="200"></button>
+        <button onclick="returnBook()">Return Book</button>
+        <input type="text" id="book_title"/>
+        
+        <table id="booksOut">
+            <caption>Books Checked Out</caption>
+            <tr><th>Book</th><th>Past Due Fee</th><th>DueDate</th></tr>
+        </table>
+
+        
+        <button id="btn-reset" onclick="clearAllBooks()">Reset</button>
+    </div>
